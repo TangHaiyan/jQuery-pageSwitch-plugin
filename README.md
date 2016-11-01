@@ -1,6 +1,8 @@
 # jQuery-pageSwitch-plugin
 a simply jQuery plugin like fullpage
 
+demo : https://tanghaiyan.github.io/jQuery-pageSwitch-plugin/
+
 一 jquery插件开发的种类
 1 给jquery命名下添加新的全局函数，静态方法
 jQuery.myPlugin=function(){
