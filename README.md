@@ -24,18 +24,19 @@ this.each遍历所有元素。
 
 三 基本结构：
 ;(function($){
-   
+
   function MyPlugin(el,options){
  
   }
+  
   $.fn.extend({
 	 myPlugin :function(options){
        //直接写插件代码
        return this;
 	 }
   })   
-   //r如果需要传递默认参数，直接添加到fn上，不用extend方法扩展
-   $.fn.myPlugin =  function (options){
+  //r如果需要传递默认参数，直接添加到fn上，不用extend方法扩展
+  $.fn.myPlugin =  function (options){
        return this.each(function(){
           new myPlugin($(this),options)
        })
