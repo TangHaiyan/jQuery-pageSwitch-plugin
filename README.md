@@ -10,7 +10,6 @@ jQuery.myPlugin=function(){
 $.fn.myPlugin=function(){
 	
 };
-
 3 选择器插件
 
 二 基本原则：
@@ -35,7 +34,7 @@ this.each遍历所有元素。
        return this;
 	 }
   })   
-  //r如果需要传递默认参数，直接添加到fn上，不用extend方法扩展
+  //如果需要传递默认参数，直接添加到fn上，不用extend方法扩展
   $.fn.myPlugin =  function (options){
        return this.each(function(){
           new myPlugin($(this),options)
